@@ -1,0 +1,17 @@
+### Check attendance
+POST /attendance HTTP/1.1
+Host: localhost:3017
+Content-Type: application/json
+Content-Length: 304
+
+{
+    "studentId": "103573356",
+    "classroomId": "COS30017.1679749141734",
+    "secret": "/BuByEG69+mL08BJMalX10fg3a7VIsPgqDJE8QjsX3hfLY8mzcnKKb1Tg6wfx0XV9unKTL1EqSg1Fv4v+SOrjHN06JW93gvj0k4SAecaJKeyPCh8fCSUS4k7Y35ZQOsoXsMAn5TCYJ5hGBhFxST9YiouR0G1cO0ky32aWmGYi2I=",
+    "timestamp": 1679742000000
+}
+
+
+### Get classroom
+GET /classroom HTTP/1.1
+Host: localhost:3017

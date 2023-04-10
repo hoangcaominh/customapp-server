@@ -1,0 +1,30 @@
+{
+  "name": "customapp-server",
+  "version": "1.0.0",
+  "description": "Server code for COS30017 custom app",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm -rf build/",
+    "lint": "eslint . --ext .ts",
+    "start": "node build/server.js",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hoangcaominh",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "@types/qrcode": "^1.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fastify": "^4.15.0",
+    "mongodb": "^5.1.0",
+    "qrcode": "^1.5.1"
+  }
+}
